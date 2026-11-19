@@ -1,0 +1,37 @@
+[
+  {
+    "id": "H-12",
+    "market": "海港区",
+    "revision": "1",
+    "parent": "园艺器具",
+    "text": "滴灌接头及阀"
+  },
+  {
+    "id": "S-71",
+    "market": "松岛",
+    "revision": "1",
+    "parent": "工业配件",
+    "text": "仅供工业流体传输"
+  },
+  {
+    "id": "S-71",
+    "market": "松岛",
+    "revision": "2",
+    "parent": "工业配件",
+    "text": "包括商业园艺滴灌接头"
+  },
+  {
+    "id": "S-72",
+    "market": "松岛",
+    "revision": "1",
+    "parent": "工业配件",
+    "text": "杉木纹套管"
+  },
+  {
+    "id": "S-53",
+    "market": "松岛",
+    "revision": "1",
+    "parent": "设计服务",
+    "text": "景观规划"
+  }
+]

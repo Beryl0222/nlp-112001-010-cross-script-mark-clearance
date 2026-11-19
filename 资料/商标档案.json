@@ -1,0 +1,34 @@
+[
+  {
+    "id": "t1",
+    "label": "雨山",
+    "variant": "YUSHAN",
+    "market": "海港区",
+    "category": "H-12",
+    "nature": "注册字样"
+  },
+  {
+    "id": "t2",
+    "label": "Yu-Shan",
+    "variant": "Yushan",
+    "market": "松岛",
+    "category": "S-71",
+    "nature": "注册字样"
+  },
+  {
+    "id": "t3",
+    "label": "杉软管",
+    "variant": "Cedar tubing",
+    "market": "松岛",
+    "category": "S-72",
+    "nature": "品类说明"
+  },
+  {
+    "id": "t4",
+    "label": "Rain Cedar",
+    "variant": "RainCedar",
+    "market": "松岛",
+    "category": "S-53",
+    "nature": "注册字样"
+  }
+]
