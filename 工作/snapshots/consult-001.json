@@ -1,0 +1,2364 @@
+{
+  "id": "consult-001",
+  "at": "2026-11-24T09:00:00+08:00",
+  "note": "当次分析快照：资料读取后立即固定，便于还原当次候选、分类与排除理由",
+  "materialsCounts": {
+    "来函.json": 3,
+    "商标档案.json": 4,
+    "市场类目.json": 5
+  },
+  "queries": [
+    {
+      "id": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "markets": [
+        {
+          "name": "海港区",
+          "span": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "松岛",
+          "span": [
+            4,
+            6
+          ]
+        }
+      ],
+      "language": "zh",
+      "mentions": [
+        {
+          "id": "q1-M1",
+          "text": "雨杉",
+          "span": [
+            0,
+            2
+          ],
+          "role": "actual",
+          "roleLabel": "拟实际使用名称",
+          "rule": "zh-actual-zuo",
+          "quote": "雨杉做滴灌配件，套管",
+          "searchable": true,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                0,
+                2
+              ],
+              "text": "雨杉"
+            }
+          ]
+        },
+        {
+          "id": "q1-M2",
+          "text": "Yu Shan",
+          "span": [
+            25,
+            32
+          ],
+          "role": "alias",
+          "roleLabel": "暂拟别名/异写",
+          "rule": "zh-alias-en",
+          "quote": "也考虑英文 Yu Shan。",
+          "searchable": true,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                25,
+                32
+              ],
+              "text": "Yu Shan"
+            }
+          ]
+        }
+      ],
+      "goods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "kind": "商品",
+          "clause": "雨杉做滴灌配件",
+          "brandUse": true,
+          "usageCues": [],
+          "qualifier": "来函称经营/制造该品"
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "kind": "商品",
+          "clause": "套管代工不打这个标志",
+          "brandUse": false,
+          "usageCues": [
+            "no-mark-oem",
+            "no-brand-print",
+            "oem"
+          ],
+          "qualifier": "来函明示不作为品牌使用或仅为材料词"
+        }
+      ],
+      "cues": [
+        {
+          "code": "oem-no-mark-anaphor",
+          "goods": "套管",
+          "goodsSpan": [
+            8,
+            10
+          ],
+          "anaphor": "这个标志",
+          "resolvedMentionId": "q1-M1",
+          "mark": "雨杉",
+          "brandUse": false,
+          "quote": "套管代工不打这个标志"
+        }
+      ],
+      "clientTradeTerm": "园艺",
+      "questions": [
+        {
+          "code": "finding-question",
+          "findingKey": "q1|q1-M1|t4|松岛|S-53",
+          "code2": "Q1-C05",
+          "text": "存在意译/近形等中等强度线索但类目不对应，需人工判断两个品牌是否实际指向同一来源或存在扩展计划。"
+        },
+        {
+          "code": "finding-question",
+          "findingKey": "q1|q1-M1|t3|松岛|S-72",
+          "code2": "Q1-C06",
+          "text": "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+        },
+        {
+          "code": "confirm-romanization",
+          "text": "请客户确认对外正式拼写及大小写/空格/连字符规格；本次已按归一规则覆盖 Yu Shan、Yushan、Yu-Shan、YUSHAN 等变体。"
+        },
+        {
+          "code": "confirm-no-brand-use",
+          "text": "请确认“套管”确为无牌代工用途，并留存包装、代工条款或页面依据；该商品说法本身不作为品牌主张。"
+        }
+      ],
+      "coverage": [
+        {
+          "mentionId": "q1-M1",
+          "text": "雨杉",
+          "role": "actual",
+          "hitCount": 4,
+          "trademarkIds": [
+            "t1",
+            "t2",
+            "t4",
+            "t3"
+          ]
+        },
+        {
+          "mentionId": "q1-M2",
+          "text": "Yu Shan",
+          "role": "alias",
+          "hitCount": 2,
+          "trademarkIds": [
+            "t1",
+            "t2"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "key": "q1|q1-M1|t1|海港区|H-12",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M1",
+            "text": "雨杉",
+            "span": [
+              0,
+              2
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "zh-actual-zuo",
+            "filingIntent": null,
+            "quote": "雨杉做滴灌配件，套管"
+          },
+          "trademark": {
+            "id": "t1",
+            "label": "雨山",
+            "variant": "YUSHAN",
+            "nature": "注册字样",
+            "market": "海港区",
+            "category": "H-12",
+            "categoryRevision": "1",
+            "categoryText": "滴灌接头及阀",
+            "categoryParent": "园艺器具"
+          },
+          "market": "海港区",
+          "inScope": true,
+          "scopeReason": "档案市场 海港区 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "homophone",
+              "strength": "strong",
+              "label": "中文同音/谐音",
+              "detail": "拼音相同（无声调）：yushan，雨杉 ↔ 雨山",
+              "soundKey": "yushan",
+              "against": "雨山",
+              "field": "label"
+            },
+            {
+              "code": "shared-han",
+              "strength": "weak",
+              "label": "共有汉字",
+              "detail": "共有汉字：雨（单独不足以认定近似）",
+              "against": "雨山",
+              "field": "label"
+            },
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ YUSHAN（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "YUSHAN",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "雨山",
+              "evidences": [
+                {
+                  "code": "homophone",
+                  "strength": "strong",
+                  "label": "中文同音/谐音",
+                  "detail": "拼音相同（无声调）：yushan，雨杉 ↔ 雨山",
+                  "soundKey": "yushan"
+                },
+                {
+                  "code": "shared-han",
+                  "strength": "weak",
+                  "label": "共有汉字",
+                  "detail": "共有汉字：雨（单独不足以认定近似）"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "YUSHAN",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨杉 ↔ YUSHAN（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "brand",
+          "reasonCodes": [
+            "goods-related",
+            "strong-mark-match"
+          ],
+          "reasons": [
+            "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念"
+          ],
+          "questions": [],
+          "assignable": true,
+          "code": "Q1-C01"
+        },
+        {
+          "key": "q1|q1-M2|t1|海港区|H-12",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M2",
+            "text": "Yu Shan",
+            "span": [
+              25,
+              32
+            ],
+            "role": "alias",
+            "roleLabel": "暂拟别名/异写",
+            "rule": "zh-alias-en",
+            "filingIntent": null,
+            "quote": "也考虑英文 Yu Shan。"
+          },
+          "trademark": {
+            "id": "t1",
+            "label": "雨山",
+            "variant": "YUSHAN",
+            "nature": "注册字样",
+            "market": "海港区",
+            "category": "H-12",
+            "categoryRevision": "1",
+            "categoryText": "滴灌接头及阀",
+            "categoryParent": "园艺器具"
+          },
+          "market": "海港区",
+          "inScope": true,
+          "scopeReason": "档案市场 海港区 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：Yu Shan ↔ 雨山（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "雨山",
+              "field": "label"
+            },
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ YUSHAN）",
+              "normalized": "YUSHAN",
+              "against": "YUSHAN",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "雨山",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：Yu Shan ↔ 雨山（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "YUSHAN",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ YUSHAN）",
+                  "normalized": "YUSHAN"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "brand",
+          "reasonCodes": [
+            "goods-related",
+            "strong-mark-match"
+          ],
+          "reasons": [
+            "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念"
+          ],
+          "questions": [],
+          "assignable": true,
+          "code": "Q1-C02"
+        },
+        {
+          "key": "q1|q1-M1|t2|松岛|S-71",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M1",
+            "text": "雨杉",
+            "span": [
+              0,
+              2
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "zh-actual-zuo",
+            "filingIntent": null,
+            "quote": "雨杉做滴灌配件，套管"
+          },
+          "trademark": {
+            "id": "t2",
+            "label": "Yu-Shan",
+            "variant": "Yushan",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-71",
+            "categoryRevision": "2",
+            "categoryText": "包括商业园艺滴灌接头",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ Yu-Shan（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "Yu-Shan",
+              "field": "label"
+            },
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ Yushan（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "Yushan",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Yu-Shan",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨杉 ↔ Yu-Shan（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Yushan",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨杉 ↔ Yushan（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”",
+            "decidedAgainstRevision": "2"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "brand",
+          "reasonCodes": [
+            "goods-related",
+            "strong-mark-match"
+          ],
+          "reasons": [
+            "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”"
+          ],
+          "questions": [],
+          "assignable": true,
+          "code": "Q1-C03"
+        },
+        {
+          "key": "q1|q1-M2|t2|松岛|S-71",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M2",
+            "text": "Yu Shan",
+            "span": [
+              25,
+              32
+            ],
+            "role": "alias",
+            "roleLabel": "暂拟别名/异写",
+            "rule": "zh-alias-en",
+            "filingIntent": null,
+            "quote": "也考虑英文 Yu Shan。"
+          },
+          "trademark": {
+            "id": "t2",
+            "label": "Yu-Shan",
+            "variant": "Yushan",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-71",
+            "categoryRevision": "2",
+            "categoryText": "包括商业园艺滴灌接头",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yu-Shan）",
+              "normalized": "YUSHAN",
+              "against": "Yu-Shan",
+              "field": "label"
+            },
+            {
+              "code": "shared-word",
+              "strength": "weak",
+              "label": "共有拉丁词",
+              "detail": "共有词：shan（单独不足以认定近似）",
+              "against": "Yu-Shan",
+              "field": "label"
+            },
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yushan）",
+              "normalized": "YUSHAN",
+              "against": "Yushan",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Yu-Shan",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yu-Shan）",
+                  "normalized": "YUSHAN"
+                },
+                {
+                  "code": "shared-word",
+                  "strength": "weak",
+                  "label": "共有拉丁词",
+                  "detail": "共有词：shan（单独不足以认定近似）"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Yushan",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yushan）",
+                  "normalized": "YUSHAN"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”",
+            "decidedAgainstRevision": "2"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "brand",
+          "reasonCodes": [
+            "goods-related",
+            "strong-mark-match"
+          ],
+          "reasons": [
+            "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”"
+          ],
+          "questions": [],
+          "assignable": true,
+          "code": "Q1-C04"
+        },
+        {
+          "key": "q1|q1-M1|t4|松岛|S-53",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M1",
+            "text": "雨杉",
+            "span": [
+              0,
+              2
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "zh-actual-zuo",
+            "filingIntent": null,
+            "quote": "雨杉做滴灌配件，套管"
+          },
+          "trademark": {
+            "id": "t4",
+            "label": "Rain Cedar",
+            "variant": "RainCedar",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-53",
+            "categoryRevision": "1",
+            "categoryText": "景观规划",
+            "categoryParent": "设计服务"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "中",
+          "evidences": [
+            {
+              "code": "calque",
+              "strength": "medium",
+              "label": "逐字意译对应",
+              "detail": "逐字义译连写均为 raincedar：雨杉 ↔ Rain Cedar（可能是有意的中英对应，需人工确认）",
+              "calqueKey": "raincedar",
+              "against": "Rain Cedar",
+              "field": "label"
+            },
+            {
+              "code": "calque",
+              "strength": "medium",
+              "label": "逐字意译对应",
+              "detail": "逐字义译连写均为 raincedar：雨杉 ↔ RainCedar（可能是有意的中英对应，需人工确认）",
+              "calqueKey": "raincedar",
+              "against": "RainCedar",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Rain Cedar",
+              "evidences": [
+                {
+                  "code": "calque",
+                  "strength": "medium",
+                  "label": "逐字意译对应",
+                  "detail": "逐字义译连写均为 raincedar：雨杉 ↔ Rain Cedar（可能是有意的中英对应，需人工确认）",
+                  "calqueKey": "raincedar"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "RainCedar",
+              "evidences": [
+                {
+                  "code": "calque",
+                  "strength": "medium",
+                  "label": "逐字意译对应",
+                  "detail": "逐字义译连写均为 raincedar：雨杉 ↔ RainCedar（可能是有意的中英对应，需人工确认）",
+                  "calqueKey": "raincedar"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": false,
+            "relation": "none",
+            "reason": "来函商品概念与类目“景观规划”（设计服务）不对应",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "需核查",
+          "priority": "P2",
+          "lane": "brand",
+          "reasonCodes": [
+            "category-not-related",
+            "medium-mark-match-cross-category"
+          ],
+          "reasons": [
+            "来函商品概念与类目“景观规划”（设计服务）不对应"
+          ],
+          "questions": [
+            "存在意译/近形等中等强度线索但类目不对应，需人工判断两个品牌是否实际指向同一来源或存在扩展计划。"
+          ],
+          "assignable": true,
+          "code": "Q1-C05"
+        },
+        {
+          "key": "q1|q1-M1|t3|松岛|S-72",
+          "queryId": "q1",
+          "client": "河岸园艺",
+          "source": {
+            "file": "来函.json",
+            "id": "q1"
+          },
+          "mention": {
+            "id": "q1-M1",
+            "text": "雨杉",
+            "span": [
+              0,
+              2
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "zh-actual-zuo",
+            "filingIntent": null,
+            "quote": "雨杉做滴灌配件，套管"
+          },
+          "trademark": {
+            "id": "t3",
+            "label": "杉软管",
+            "variant": "Cedar tubing",
+            "nature": "品类说明",
+            "market": "松岛",
+            "category": "S-72",
+            "categoryRevision": "1",
+            "categoryText": "杉木纹套管",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "低",
+          "evidences": [
+            {
+              "code": "shared-han",
+              "strength": "weak",
+              "label": "共有汉字",
+              "detail": "共有汉字：杉（单独不足以认定近似）",
+              "against": "杉软管",
+              "field": "label"
+            },
+            {
+              "code": "translation-word",
+              "strength": "weak",
+              "label": "部分字义/释义对应",
+              "detail": "杉=cedar→cedar",
+              "against": "Cedar tubing",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "杉软管",
+              "evidences": [
+                {
+                  "code": "shared-han",
+                  "strength": "weak",
+                  "label": "共有汉字",
+                  "detail": "共有汉字：杉（单独不足以认定近似）"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Cedar tubing",
+              "evidences": [
+                {
+                  "code": "translation-word",
+                  "strength": "weak",
+                  "label": "部分字义/释义对应",
+                  "detail": "杉=cedar→cedar"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "滴灌配件",
+              "span": [
+                3,
+                7
+              ],
+              "conceptId": "DRIP_FITTINGS",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "套管",
+              "span": [
+                8,
+                10
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“套管”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "可排除",
+          "priority": "P3",
+          "lane": "descriptor",
+          "reasonCodes": [
+            "descriptor-lane",
+            "archive-is-descriptor",
+            "no-brand-use-on-goods"
+          ],
+          "reasons": [
+            "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。",
+            "对应商品“套管”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。",
+            "“套管”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制"
+          ],
+          "questions": [
+            "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+          ],
+          "assignable": true,
+          "exclusionReason": "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。 对应商品“套管”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。 “套管”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+          "code": "Q1-C06"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "client": "雨山零件",
+      "source": {
+        "file": "来函.json",
+        "id": "q2"
+      },
+      "markets": [
+        {
+          "name": "海港区",
+          "span": [
+            0,
+            3
+          ]
+        }
+      ],
+      "language": "zh",
+      "mentions": [
+        {
+          "id": "q2-M1",
+          "text": "雨山",
+          "span": [
+            5,
+            7
+          ],
+          "role": "abbreviation",
+          "roleLabel": "公司简称（未必作商标使用）",
+          "rule": "zh-abbr",
+          "quote": "本公司简称雨山，现用标是青锋。",
+          "searchable": true,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                5,
+                7
+              ],
+              "text": "雨山"
+            }
+          ]
+        },
+        {
+          "id": "q2-M2",
+          "text": "青锋",
+          "span": [
+            12,
+            14
+          ],
+          "role": "current",
+          "roleLabel": "现用标志",
+          "rule": "zh-current",
+          "quote": "山，现用标是青锋。参考同行的 Y",
+          "searchable": true,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                12,
+                14
+              ],
+              "text": "青锋"
+            }
+          ]
+        },
+        {
+          "id": "q2-M3",
+          "text": "YUSHAN",
+          "span": [
+            21,
+            27
+          ],
+          "role": "comparison",
+          "roleLabel": "用作比较的标志",
+          "rule": "zh-comparison",
+          "quote": "参考同行的 YUSHAN，但不申请它。",
+          "searchable": true,
+          "filingIntent": false,
+          "occurrences": [
+            {
+              "span": [
+                21,
+                27
+              ],
+              "text": "YUSHAN"
+            }
+          ],
+          "dispositionCue": "来函明示不申请该比较标志"
+        }
+      ],
+      "goods": [],
+      "cues": [],
+      "clientTradeTerm": "零件",
+      "questions": [
+        {
+          "code": "client-name-trade-term",
+          "text": "客户名称含行业词“零件”，但正文未说明商品/服务，需核实实际经营范围，不能直接按公司名定类。",
+          "source": {
+            "field": "client",
+            "client": "雨山零件"
+          }
+        },
+        {
+          "code": "no-goods",
+          "text": "来函未识别出商品/服务，需向客户索取具体清单。"
+        },
+        {
+          "code": "finding-question",
+          "findingKey": "q2|q2-M1|t1|海港区|H-12",
+          "code2": "Q2-C01",
+          "text": "该简称是否构成商标性使用：是否在商品、包装、合同、店招或宣传中作为标志单独使用？有无证据（照片、发票、网页）？"
+        },
+        {
+          "code": "finding-question",
+          "findingKey": "q2|q2-M1|t1|海港区|H-12",
+          "code2": "Q2-C01",
+          "text": "请确认实际经营的商品/服务清单，再判定 H-12 等类目的审核范围。"
+        }
+      ],
+      "coverage": [
+        {
+          "mentionId": "q2-M1",
+          "text": "雨山",
+          "role": "abbreviation",
+          "hitCount": 3,
+          "trademarkIds": [
+            "t1",
+            "t2",
+            "t4"
+          ]
+        },
+        {
+          "mentionId": "q2-M2",
+          "text": "青锋",
+          "role": "current",
+          "hitCount": 0,
+          "trademarkIds": []
+        },
+        {
+          "mentionId": "q2-M3",
+          "text": "YUSHAN",
+          "role": "comparison",
+          "hitCount": 2,
+          "trademarkIds": [
+            "t1",
+            "t2"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "key": "q2|q2-M1|t1|海港区|H-12",
+          "queryId": "q2",
+          "client": "雨山零件",
+          "source": {
+            "file": "来函.json",
+            "id": "q2"
+          },
+          "mention": {
+            "id": "q2-M1",
+            "text": "雨山",
+            "span": [
+              5,
+              7
+            ],
+            "role": "abbreviation",
+            "roleLabel": "公司简称（未必作商标使用）",
+            "rule": "zh-abbr",
+            "filingIntent": null,
+            "quote": "本公司简称雨山，现用标是青锋。"
+          },
+          "trademark": {
+            "id": "t1",
+            "label": "雨山",
+            "variant": "YUSHAN",
+            "nature": "注册字样",
+            "market": "海港区",
+            "category": "H-12",
+            "categoryRevision": "1",
+            "categoryText": "滴灌接头及阀",
+            "categoryParent": "园艺器具"
+          },
+          "market": "海港区",
+          "inScope": true,
+          "scopeReason": "档案市场 海港区 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“雨山”与“雨山”完全相同",
+              "against": "雨山",
+              "field": "label"
+            },
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨山 ↔ YUSHAN（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "YUSHAN",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "雨山",
+              "evidences": [
+                {
+                  "code": "exact",
+                  "strength": "strong",
+                  "label": "原样一致",
+                  "detail": "“雨山”与“雨山”完全相同"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "YUSHAN",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨山 ↔ YUSHAN（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [],
+          "categoryAssessment": {
+            "related": null,
+            "relation": "unknown",
+            "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "abbreviation",
+          "reasonCodes": [
+            "company-abbreviation",
+            "goods-scope-unknown"
+          ],
+          "reasons": [
+            "来函称其为公司简称；简称是否构成商标性使用需单独核实，不能直接按品牌主张，也不能当作无关词丢弃。",
+            "来函未说明商品/服务，无法比对类目，需先补齐经营范围"
+          ],
+          "questions": [
+            "该简称是否构成商标性使用：是否在商品、包装、合同、店招或宣传中作为标志单独使用？有无证据（照片、发票、网页）？",
+            "请确认实际经营的商品/服务清单，再判定 H-12 等类目的审核范围。"
+          ],
+          "assignable": true,
+          "code": "Q2-C01"
+        },
+        {
+          "key": "q2|q2-M3|t1|海港区|H-12",
+          "queryId": "q2",
+          "client": "雨山零件",
+          "source": {
+            "file": "来函.json",
+            "id": "q2"
+          },
+          "mention": {
+            "id": "q2-M3",
+            "text": "YUSHAN",
+            "span": [
+              21,
+              27
+            ],
+            "role": "comparison",
+            "roleLabel": "用作比较的标志",
+            "rule": "zh-comparison",
+            "filingIntent": false,
+            "quote": "参考同行的 YUSHAN，但不申请它。"
+          },
+          "trademark": {
+            "id": "t1",
+            "label": "雨山",
+            "variant": "YUSHAN",
+            "nature": "注册字样",
+            "market": "海港区",
+            "category": "H-12",
+            "categoryRevision": "1",
+            "categoryText": "滴灌接头及阀",
+            "categoryParent": "园艺器具"
+          },
+          "market": "海港区",
+          "inScope": true,
+          "scopeReason": "档案市场 海港区 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：YUSHAN ↔ 雨山（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "雨山",
+              "field": "label"
+            },
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“YUSHAN”与“YUSHAN”完全相同",
+              "against": "YUSHAN",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "雨山",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：YUSHAN ↔ 雨山（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "YUSHAN",
+              "evidences": [
+                {
+                  "code": "exact",
+                  "strength": "strong",
+                  "label": "原样一致",
+                  "detail": "“YUSHAN”与“YUSHAN”完全相同"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [],
+          "categoryAssessment": {
+            "related": null,
+            "relation": "unknown",
+            "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "仅记录",
+          "priority": "P3",
+          "lane": "comparison",
+          "reasonCodes": [
+            "comparison-mark-not-filed"
+          ],
+          "reasons": [
+            "该名称在来函中是“参考的同行标志”，客户明示不申请；保留命中证据用于比较，不立申请排查任务。"
+          ],
+          "questions": [],
+          "assignable": false,
+          "code": "Q2-C02"
+        },
+        {
+          "key": "q2|q2-M1|t4|松岛|S-53",
+          "queryId": "q2",
+          "client": "雨山零件",
+          "source": {
+            "file": "来函.json",
+            "id": "q2"
+          },
+          "mention": {
+            "id": "q2-M1",
+            "text": "雨山",
+            "span": [
+              5,
+              7
+            ],
+            "role": "abbreviation",
+            "roleLabel": "公司简称（未必作商标使用）",
+            "rule": "zh-abbr",
+            "filingIntent": null,
+            "quote": "本公司简称雨山，现用标是青锋。"
+          },
+          "trademark": {
+            "id": "t4",
+            "label": "Rain Cedar",
+            "variant": "RainCedar",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-53",
+            "categoryRevision": "1",
+            "categoryText": "景观规划",
+            "categoryParent": "设计服务"
+          },
+          "market": "松岛",
+          "inScope": false,
+          "scopeReason": "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语",
+          "confidence": "低",
+          "evidences": [
+            {
+              "code": "translation-word",
+              "strength": "weak",
+              "label": "部分字义/释义对应",
+              "detail": "雨=rain→rain",
+              "against": "Rain Cedar",
+              "field": "label"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Rain Cedar",
+              "evidences": [
+                {
+                  "code": "translation-word",
+                  "strength": "weak",
+                  "label": "部分字义/释义对应",
+                  "detail": "雨=rain→rain"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [],
+          "categoryAssessment": {
+            "related": null,
+            "relation": "unknown",
+            "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "跨市场提示",
+          "priority": "P3",
+          "lane": "abbreviation",
+          "reasonCodes": [
+            "out-of-designated-market"
+          ],
+          "reasons": [
+            "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语"
+          ],
+          "questions": [],
+          "assignable": false,
+          "code": "Q2-C03"
+        },
+        {
+          "key": "q2|q2-M1|t2|松岛|S-71",
+          "queryId": "q2",
+          "client": "雨山零件",
+          "source": {
+            "file": "来函.json",
+            "id": "q2"
+          },
+          "mention": {
+            "id": "q2-M1",
+            "text": "雨山",
+            "span": [
+              5,
+              7
+            ],
+            "role": "abbreviation",
+            "roleLabel": "公司简称（未必作商标使用）",
+            "rule": "zh-abbr",
+            "filingIntent": null,
+            "quote": "本公司简称雨山，现用标是青锋。"
+          },
+          "trademark": {
+            "id": "t2",
+            "label": "Yu-Shan",
+            "variant": "Yushan",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-71",
+            "categoryRevision": "2",
+            "categoryText": "包括商业园艺滴灌接头",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": false,
+          "scopeReason": "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨山 ↔ Yu-Shan（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "Yu-Shan",
+              "field": "label"
+            },
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨山 ↔ Yushan（无声调、多音字取可用读法）",
+              "soundKey": "yushan",
+              "against": "Yushan",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Yu-Shan",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨山 ↔ Yu-Shan（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Yushan",
+              "evidences": [
+                {
+                  "code": "transliteration",
+                  "strength": "strong",
+                  "label": "跨文字音译",
+                  "detail": "读音键 yushan 对应：雨山 ↔ Yushan（无声调、多音字取可用读法）",
+                  "soundKey": "yushan"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [],
+          "categoryAssessment": {
+            "related": null,
+            "relation": "unknown",
+            "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+            "decidedAgainstRevision": "2"
+          },
+          "status": "跨市场提示",
+          "priority": "P3",
+          "lane": "abbreviation",
+          "reasonCodes": [
+            "out-of-designated-market"
+          ],
+          "reasons": [
+            "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语"
+          ],
+          "questions": [],
+          "assignable": false,
+          "code": "Q2-C04"
+        },
+        {
+          "key": "q2|q2-M3|t2|松岛|S-71",
+          "queryId": "q2",
+          "client": "雨山零件",
+          "source": {
+            "file": "来函.json",
+            "id": "q2"
+          },
+          "mention": {
+            "id": "q2-M3",
+            "text": "YUSHAN",
+            "span": [
+              21,
+              27
+            ],
+            "role": "comparison",
+            "roleLabel": "用作比较的标志",
+            "rule": "zh-comparison",
+            "filingIntent": false,
+            "quote": "参考同行的 YUSHAN，但不申请它。"
+          },
+          "trademark": {
+            "id": "t2",
+            "label": "Yu-Shan",
+            "variant": "Yushan",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-71",
+            "categoryRevision": "2",
+            "categoryText": "包括商业园艺滴灌接头",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": false,
+          "scopeReason": "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（YUSHAN ↔ Yu-Shan）",
+              "normalized": "YUSHAN",
+              "against": "Yu-Shan",
+              "field": "label"
+            },
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（YUSHAN ↔ Yushan）",
+              "normalized": "YUSHAN",
+              "against": "Yushan",
+              "field": "variant"
+            },
+            {
+              "code": "shared-word",
+              "strength": "weak",
+              "label": "共有拉丁词",
+              "detail": "共有词：yushan（单独不足以认定近似）",
+              "against": "Yushan",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Yu-Shan",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 YUSHAN（YUSHAN ↔ Yu-Shan）",
+                  "normalized": "YUSHAN"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Yushan",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 YUSHAN（YUSHAN ↔ Yushan）",
+                  "normalized": "YUSHAN"
+                },
+                {
+                  "code": "shared-word",
+                  "strength": "weak",
+                  "label": "共有拉丁词",
+                  "detail": "共有词：yushan（单独不足以认定近似）"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [],
+          "categoryAssessment": {
+            "related": null,
+            "relation": "unknown",
+            "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+            "decidedAgainstRevision": "2"
+          },
+          "status": "跨市场提示",
+          "priority": "P3",
+          "lane": "comparison",
+          "reasonCodes": [
+            "out-of-designated-market"
+          ],
+          "reasons": [
+            "档案市场 松岛 不在来函指定市场（海港区），仅作跨市场提示；同一写法在不同市场对应不同类目与用语"
+          ],
+          "questions": [],
+          "assignable": false,
+          "code": "Q2-C05"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "client": "雨海设计",
+      "source": {
+        "file": "来函.json",
+        "id": "q3"
+      },
+      "markets": [
+        {
+          "name": "松岛",
+          "span": [
+            0,
+            2
+          ]
+        }
+      ],
+      "language": "en",
+      "mentions": [
+        {
+          "id": "q3-M1",
+          "text": "Rain Cedar",
+          "span": [
+            12,
+            22
+          ],
+          "role": "actual",
+          "roleLabel": "拟实际使用名称",
+          "rule": "en-the-mark-is",
+          "quote": "rk is Rain Cedar for lan",
+          "searchable": true,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                12,
+                22
+              ],
+              "text": "Rain Cedar"
+            }
+          ]
+        },
+        {
+          "id": "q3-M2",
+          "text": "Cedar tubing",
+          "span": [
+            45,
+            57
+          ],
+          "role": "generic",
+          "roleLabel": "材料/通用描述词（非品牌主张）",
+          "rule": "en-material-term",
+          "quote": "sign. Cedar tubing is only",
+          "searchable": false,
+          "filingIntent": null,
+          "occurrences": [
+            {
+              "span": [
+                45,
+                57
+              ],
+              "text": "Cedar tubing"
+            }
+          ]
+        }
+      ],
+      "goods": [
+        {
+          "id": "G1",
+          "text": "landscape design",
+          "span": [
+            27,
+            43
+          ],
+          "conceptId": "LANDSCAPE",
+          "kind": "服务",
+          "clause": "The mark is Rain Cedar for landscape design",
+          "brandUse": true,
+          "usageCues": [],
+          "qualifier": "一般提及"
+        },
+        {
+          "id": "G2",
+          "text": "Cedar tubing",
+          "span": [
+            45,
+            57
+          ],
+          "conceptId": "TUBING",
+          "kind": "商品",
+          "clause": " Cedar tubing is only a material term",
+          "brandUse": false,
+          "usageCues": [
+            "material-term"
+          ],
+          "qualifier": "来函明示不作为品牌使用或仅为材料词"
+        }
+      ],
+      "cues": [
+        {
+          "code": "material-term-statement",
+          "term": "Cedar tubing",
+          "termSpan": [
+            45,
+            57
+          ],
+          "brandUse": false,
+          "quote": "Cedar tubing is only a material term"
+        }
+      ],
+      "clientTradeTerm": "设计",
+      "questions": [
+        {
+          "code": "finding-question",
+          "findingKey": "q3|q3-M2|t4|松岛|S-53",
+          "code2": "Q3-C02",
+          "text": "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+        },
+        {
+          "code": "finding-question",
+          "findingKey": "q3|q3-M2|t3|松岛|S-72",
+          "code2": "Q3-C03",
+          "text": "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+        },
+        {
+          "code": "finding-question",
+          "findingKey": "q3|q3-M1|t3|松岛|S-72",
+          "code2": "Q3-C04",
+          "text": "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+        },
+        {
+          "code": "confirm-no-brand-use",
+          "text": "请确认“Cedar tubing”确为材料/通用描述用途，并留存包装、代工条款或页面依据；该商品说法本身不作为品牌主张。"
+        }
+      ],
+      "coverage": [
+        {
+          "mentionId": "q3-M1",
+          "text": "Rain Cedar",
+          "role": "actual",
+          "hitCount": 3,
+          "trademarkIds": [
+            "t4",
+            "t1",
+            "t3"
+          ]
+        },
+        {
+          "mentionId": "q3-M2",
+          "text": "Cedar tubing",
+          "role": "generic",
+          "hitCount": 2,
+          "trademarkIds": [
+            "t3",
+            "t4"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "key": "q3|q3-M1|t4|松岛|S-53",
+          "queryId": "q3",
+          "client": "雨海设计",
+          "source": {
+            "file": "来函.json",
+            "id": "q3"
+          },
+          "mention": {
+            "id": "q3-M1",
+            "text": "Rain Cedar",
+            "span": [
+              12,
+              22
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "en-the-mark-is",
+            "filingIntent": null,
+            "quote": "rk is Rain Cedar for lan"
+          },
+          "trademark": {
+            "id": "t4",
+            "label": "Rain Cedar",
+            "variant": "RainCedar",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-53",
+            "categoryRevision": "1",
+            "categoryText": "景观规划",
+            "categoryParent": "设计服务"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“Rain Cedar”与“Rain Cedar”完全相同",
+              "against": "Rain Cedar",
+              "field": "label"
+            },
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 RAINCEDAR（Rain Cedar ↔ RainCedar）",
+              "normalized": "RAINCEDAR",
+              "against": "RainCedar",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Rain Cedar",
+              "evidences": [
+                {
+                  "code": "exact",
+                  "strength": "strong",
+                  "label": "原样一致",
+                  "detail": "“Rain Cedar”与“Rain Cedar”完全相同"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "RainCedar",
+              "evidences": [
+                {
+                  "code": "latin-variant",
+                  "strength": "strong",
+                  "label": "拉丁写法变体",
+                  "detail": "忽略大小写、空格与连字符后均为 RAINCEDAR（Rain Cedar ↔ RainCedar）",
+                  "normalized": "RAINCEDAR"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "landscape design",
+              "span": [
+                27,
+                43
+              ],
+              "conceptId": "LANDSCAPE",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "Cedar tubing",
+              "span": [
+                45,
+                57
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“landscape design”与 S-53 rev1“景观规划”：同一商品/服务概念",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "需核查",
+          "priority": "P1",
+          "lane": "brand",
+          "reasonCodes": [
+            "goods-related",
+            "strong-mark-match"
+          ],
+          "reasons": [
+            "“landscape design”与 S-53 rev1“景观规划”：同一商品/服务概念"
+          ],
+          "questions": [],
+          "assignable": true,
+          "code": "Q3-C01"
+        },
+        {
+          "key": "q3|q3-M2|t4|松岛|S-53",
+          "queryId": "q3",
+          "client": "雨海设计",
+          "source": {
+            "file": "来函.json",
+            "id": "q3"
+          },
+          "mention": {
+            "id": "q3-M2",
+            "text": "Cedar tubing",
+            "span": [
+              45,
+              57
+            ],
+            "role": "generic",
+            "roleLabel": "材料/通用描述词（非品牌主张）",
+            "rule": "en-material-term",
+            "filingIntent": null,
+            "quote": "sign. Cedar tubing is only"
+          },
+          "trademark": {
+            "id": "t4",
+            "label": "Rain Cedar",
+            "variant": "RainCedar",
+            "nature": "注册字样",
+            "market": "松岛",
+            "category": "S-53",
+            "categoryRevision": "1",
+            "categoryText": "景观规划",
+            "categoryParent": "设计服务"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "低",
+          "evidences": [
+            {
+              "code": "shared-word",
+              "strength": "weak",
+              "label": "共有拉丁词",
+              "detail": "共有词：cedar（单独不足以认定近似）",
+              "against": "Rain Cedar",
+              "field": "label"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "Rain Cedar",
+              "evidences": [
+                {
+                  "code": "shared-word",
+                  "strength": "weak",
+                  "label": "共有拉丁词",
+                  "detail": "共有词：cedar（单独不足以认定近似）"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G2",
+              "text": "Cedar tubing",
+              "span": [
+                45,
+                57
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": false,
+            "relation": "none",
+            "reason": "来函商品概念与类目“景观规划”（设计服务）不对应",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "可排除",
+          "priority": "P3",
+          "lane": "descriptor",
+          "reasonCodes": [
+            "descriptor-lane",
+            "client-stated-material-term",
+            "no-brand-use-on-goods"
+          ],
+          "reasons": [
+            "来函明示该写法只是材料/通用描述词，不是客户主张的标志。",
+            "对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。",
+            "来函商品概念与类目“景观规划”（设计服务）不对应"
+          ],
+          "questions": [
+            "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+          ],
+          "assignable": true,
+          "exclusionReason": "来函明示该写法只是材料/通用描述词，不是客户主张的标志。 对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。 来函商品概念与类目“景观规划”（设计服务）不对应",
+          "code": "Q3-C02"
+        },
+        {
+          "key": "q3|q3-M2|t3|松岛|S-72",
+          "queryId": "q3",
+          "client": "雨海设计",
+          "source": {
+            "file": "来函.json",
+            "id": "q3"
+          },
+          "mention": {
+            "id": "q3-M2",
+            "text": "Cedar tubing",
+            "span": [
+              45,
+              57
+            ],
+            "role": "generic",
+            "roleLabel": "材料/通用描述词（非品牌主张）",
+            "rule": "en-material-term",
+            "filingIntent": null,
+            "quote": "sign. Cedar tubing is only"
+          },
+          "trademark": {
+            "id": "t3",
+            "label": "杉软管",
+            "variant": "Cedar tubing",
+            "nature": "品类说明",
+            "market": "松岛",
+            "category": "S-72",
+            "categoryRevision": "1",
+            "categoryText": "杉木纹套管",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "高",
+          "evidences": [
+            {
+              "code": "translation-word",
+              "strength": "weak",
+              "label": "部分字义/释义对应",
+              "detail": "杉=cedar→cedar；软管=tubing→tubing",
+              "against": "杉软管",
+              "field": "label"
+            },
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“Cedar tubing”与“Cedar tubing”完全相同",
+              "against": "Cedar tubing",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "杉软管",
+              "evidences": [
+                {
+                  "code": "translation-word",
+                  "strength": "weak",
+                  "label": "部分字义/释义对应",
+                  "detail": "杉=cedar→cedar；软管=tubing→tubing"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Cedar tubing",
+              "evidences": [
+                {
+                  "code": "exact",
+                  "strength": "strong",
+                  "label": "原样一致",
+                  "detail": "“Cedar tubing”与“Cedar tubing”完全相同"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G2",
+              "text": "Cedar tubing",
+              "span": [
+                45,
+                57
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "可排除",
+          "priority": "P3",
+          "lane": "descriptor",
+          "reasonCodes": [
+            "descriptor-lane",
+            "archive-is-descriptor",
+            "client-stated-material-term",
+            "no-brand-use-on-goods"
+          ],
+          "reasons": [
+            "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。",
+            "来函明示该写法只是材料/通用描述词，不是客户主张的标志。",
+            "对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。",
+            "“Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制"
+          ],
+          "questions": [
+            "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+          ],
+          "assignable": true,
+          "exclusionReason": "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。 来函明示该写法只是材料/通用描述词，不是客户主张的标志。 对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。 “Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+          "code": "Q3-C03"
+        },
+        {
+          "key": "q3|q3-M1|t3|松岛|S-72",
+          "queryId": "q3",
+          "client": "雨海设计",
+          "source": {
+            "file": "来函.json",
+            "id": "q3"
+          },
+          "mention": {
+            "id": "q3-M1",
+            "text": "Rain Cedar",
+            "span": [
+              12,
+              22
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "en-the-mark-is",
+            "filingIntent": null,
+            "quote": "rk is Rain Cedar for lan"
+          },
+          "trademark": {
+            "id": "t3",
+            "label": "杉软管",
+            "variant": "Cedar tubing",
+            "nature": "品类说明",
+            "market": "松岛",
+            "category": "S-72",
+            "categoryRevision": "1",
+            "categoryText": "杉木纹套管",
+            "categoryParent": "工业配件"
+          },
+          "market": "松岛",
+          "inScope": true,
+          "scopeReason": "档案市场 松岛 在来函指定市场内",
+          "confidence": "低",
+          "evidences": [
+            {
+              "code": "translation-word",
+              "strength": "weak",
+              "label": "部分字义/释义对应",
+              "detail": "杉=cedar→cedar",
+              "against": "杉软管",
+              "field": "label"
+            },
+            {
+              "code": "shared-word",
+              "strength": "weak",
+              "label": "共有拉丁词",
+              "detail": "共有词：cedar（单独不足以认定近似）",
+              "against": "Cedar tubing",
+              "field": "variant"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "杉软管",
+              "evidences": [
+                {
+                  "code": "translation-word",
+                  "strength": "weak",
+                  "label": "部分字义/释义对应",
+                  "detail": "杉=cedar→cedar"
+                }
+              ]
+            },
+            {
+              "field": "variant",
+              "value": "Cedar tubing",
+              "evidences": [
+                {
+                  "code": "shared-word",
+                  "strength": "weak",
+                  "label": "共有拉丁词",
+                  "detail": "共有词：cedar（单独不足以认定近似）"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "landscape design",
+              "span": [
+                27,
+                43
+              ],
+              "conceptId": "LANDSCAPE",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "Cedar tubing",
+              "span": [
+                45,
+                57
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": true,
+            "relation": "same",
+            "reason": "“Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "可排除",
+          "priority": "P3",
+          "lane": "descriptor",
+          "reasonCodes": [
+            "descriptor-lane",
+            "archive-is-descriptor",
+            "no-brand-use-on-goods"
+          ],
+          "reasons": [
+            "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。",
+            "对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。",
+            "“Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制"
+          ],
+          "questions": [
+            "请当地同事确认该词在本地是否确为行业通用描述，以及使用方式未突出为品牌。"
+          ],
+          "assignable": true,
+          "exclusionReason": "档案 t3 的性质为“品类说明”而非注册字样，不能把“杉软管”当成某品牌的俗称。 对应商品“Cedar tubing”在函中为无牌代工/材料用途：来函明示不作为品牌使用或仅为材料词。 “Cedar tubing”与 S-72 rev1“杉木纹套管”：同一商品/服务概念；杉木纹套管为套管的具体下位形制",
+          "code": "Q3-C04"
+        },
+        {
+          "key": "q3|q3-M1|t1|海港区|H-12",
+          "queryId": "q3",
+          "client": "雨海设计",
+          "source": {
+            "file": "来函.json",
+            "id": "q3"
+          },
+          "mention": {
+            "id": "q3-M1",
+            "text": "Rain Cedar",
+            "span": [
+              12,
+              22
+            ],
+            "role": "actual",
+            "roleLabel": "拟实际使用名称",
+            "rule": "en-the-mark-is",
+            "filingIntent": null,
+            "quote": "rk is Rain Cedar for lan"
+          },
+          "trademark": {
+            "id": "t1",
+            "label": "雨山",
+            "variant": "YUSHAN",
+            "nature": "注册字样",
+            "market": "海港区",
+            "category": "H-12",
+            "categoryRevision": "1",
+            "categoryText": "滴灌接头及阀",
+            "categoryParent": "园艺器具"
+          },
+          "market": "海港区",
+          "inScope": false,
+          "scopeReason": "档案市场 海港区 不在来函指定市场（松岛），仅作跨市场提示；同一写法在不同市场对应不同类目与用语",
+          "confidence": "低",
+          "evidences": [
+            {
+              "code": "translation-word",
+              "strength": "weak",
+              "label": "部分字义/释义对应",
+              "detail": "雨=rain→rain",
+              "against": "雨山",
+              "field": "label"
+            }
+          ],
+          "surfaceMatches": [
+            {
+              "field": "label",
+              "value": "雨山",
+              "evidences": [
+                {
+                  "code": "translation-word",
+                  "strength": "weak",
+                  "label": "部分字义/释义对应",
+                  "detail": "雨=rain→rain"
+                }
+              ]
+            }
+          ],
+          "basisGoods": [
+            {
+              "id": "G1",
+              "text": "landscape design",
+              "span": [
+                27,
+                43
+              ],
+              "conceptId": "LANDSCAPE",
+              "brandUse": true
+            },
+            {
+              "id": "G2",
+              "text": "Cedar tubing",
+              "span": [
+                45,
+                57
+              ],
+              "conceptId": "TUBING",
+              "brandUse": false
+            }
+          ],
+          "categoryAssessment": {
+            "related": false,
+            "relation": "none",
+            "reason": "来函商品概念与类目“滴灌接头及阀”（园艺器具）不对应",
+            "decidedAgainstRevision": "1"
+          },
+          "status": "跨市场提示",
+          "priority": "P3",
+          "lane": "brand",
+          "reasonCodes": [
+            "out-of-designated-market"
+          ],
+          "reasons": [
+            "档案市场 海港区 不在来函指定市场（松岛），仅作跨市场提示；同一写法在不同市场对应不同类目与用语"
+          ],
+          "questions": [],
+          "assignable": false,
+          "code": "Q3-C05"
+        }
+      ]
+    }
+  ]
+}

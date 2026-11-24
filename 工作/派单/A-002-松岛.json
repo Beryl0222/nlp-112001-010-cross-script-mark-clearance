@@ -1,0 +1,688 @@
+{
+  "id": "A-002",
+  "market": "松岛",
+  "assignee": "林岚",
+  "at": "2026-11-24T10:05:00+08:00",
+  "findingKeys": [
+    "q1|q1-M1|t2|松岛|S-71",
+    "q1|q1-M2|t2|松岛|S-71",
+    "q1|q1-M1|t4|松岛|S-53",
+    "q3|q3-M1|t4|松岛|S-53"
+  ],
+  "status": "已发出",
+  "note": "松岛 S-71 修订重看、S-53 相同标志核对",
+  "findings": [
+    {
+      "key": "q1|q1-M1|t2|松岛|S-71",
+      "queryId": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "mention": {
+        "id": "q1-M1",
+        "text": "雨杉",
+        "span": [
+          0,
+          2
+        ],
+        "role": "actual",
+        "roleLabel": "拟实际使用名称",
+        "rule": "zh-actual-zuo",
+        "filingIntent": null,
+        "quote": "雨杉做滴灌配件，套管"
+      },
+      "trademark": {
+        "id": "t2",
+        "label": "Yu-Shan",
+        "variant": "Yushan",
+        "nature": "注册字样",
+        "market": "松岛",
+        "category": "S-71",
+        "categoryRevision": "2",
+        "categoryText": "包括商业园艺滴灌接头",
+        "categoryParent": "工业配件"
+      },
+      "market": "松岛",
+      "inScope": true,
+      "scopeReason": "档案市场 松岛 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "transliteration",
+          "strength": "strong",
+          "label": "跨文字音译",
+          "detail": "读音键 yushan 对应：雨杉 ↔ Yu-Shan（无声调、多音字取可用读法）",
+          "soundKey": "yushan",
+          "against": "Yu-Shan",
+          "field": "label"
+        },
+        {
+          "code": "transliteration",
+          "strength": "strong",
+          "label": "跨文字音译",
+          "detail": "读音键 yushan 对应：雨杉 ↔ Yushan（无声调、多音字取可用读法）",
+          "soundKey": "yushan",
+          "against": "Yushan",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "Yu-Shan",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ Yu-Shan（无声调、多音字取可用读法）",
+              "soundKey": "yushan"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "Yushan",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ Yushan（无声调、多音字取可用读法）",
+              "soundKey": "yushan"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": true,
+        "relation": "same",
+        "reason": "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”",
+        "decidedAgainstRevision": "2"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "brand",
+      "reasonCodes": [
+        "goods-related",
+        "strong-mark-match"
+      ],
+      "reasons": [
+        "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”"
+      ],
+      "questions": [],
+      "assignable": true,
+      "code": "Q1-C03",
+      "flowState": "已分派",
+      "assignee": "林岚",
+      "assignments": [
+        {
+          "assignmentId": "A-002",
+          "at": "2026-11-24T10:05:00+08:00",
+          "assignee": "林岚",
+          "market": "松岛"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [
+        {
+          "at": "2025-09-15T16:20:00+08:00",
+          "actor": "顾问（旧）",
+          "action": "decision",
+          "status": "不相关",
+          "reason": "S-71 rev1 文本为“仅供工业流体传输”，与园艺滴灌配件无关，当时排除。",
+          "categoryRevision": "1"
+        },
+        {
+          "at": "2026-11-24T09:10:00+08:00",
+          "actor": "系统",
+          "action": "revision-reopen",
+          "status": "需重看",
+          "reason": "类目 S-71 从 rev1 更新到 rev2：仅供工业流体传输 → 包括商业园艺滴灌接头"
+        },
+        {
+          "at": "2026-11-24T09:40:00+08:00",
+          "actor": "系统",
+          "action": "independent-evidence-retained",
+          "status": "需重看",
+          "reason": "撤销描述词 t3 的俗称关联后，仍有独立证据：transliteration"
+        }
+      ],
+      "flags": {
+        "revisionImpact": {
+          "findingKey": "q1|q1-M1|t2|松岛|S-71",
+          "code": "Q1-C03",
+          "queryId": "q1",
+          "mention": "雨杉",
+          "trademarkId": "t2",
+          "categoryId": "S-71",
+          "market": "松岛",
+          "fromRevision": "1",
+          "toRevision": "2",
+          "oldText": "仅供工业流体传输",
+          "newText": "包括商业园艺滴灌接头",
+          "addedConcepts": [
+            "DRIP_FITTINGS"
+          ],
+          "matchingAdded": [
+            "DRIP_FITTINGS"
+          ],
+          "priorDecision": {
+            "at": "2025-09-15T16:20:00+08:00",
+            "actor": "顾问（旧）",
+            "action": "decision",
+            "status": "不相关",
+            "reason": "S-71 rev1 文本为“仅供工业流体传输”，与园艺滴灌配件无关，当时排除。",
+            "categoryRevision": "1"
+          }
+        },
+        "independentEvidenceRetained": {
+          "descriptorId": "t3",
+          "codes": [
+            "transliteration"
+          ],
+          "at": "2026-11-24T09:40:00+08:00"
+        }
+      }
+    },
+    {
+      "key": "q1|q1-M2|t2|松岛|S-71",
+      "queryId": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "mention": {
+        "id": "q1-M2",
+        "text": "Yu Shan",
+        "span": [
+          25,
+          32
+        ],
+        "role": "alias",
+        "roleLabel": "暂拟别名/异写",
+        "rule": "zh-alias-en",
+        "filingIntent": null,
+        "quote": "也考虑英文 Yu Shan。"
+      },
+      "trademark": {
+        "id": "t2",
+        "label": "Yu-Shan",
+        "variant": "Yushan",
+        "nature": "注册字样",
+        "market": "松岛",
+        "category": "S-71",
+        "categoryRevision": "2",
+        "categoryText": "包括商业园艺滴灌接头",
+        "categoryParent": "工业配件"
+      },
+      "market": "松岛",
+      "inScope": true,
+      "scopeReason": "档案市场 松岛 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "latin-variant",
+          "strength": "strong",
+          "label": "拉丁写法变体",
+          "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yu-Shan）",
+          "normalized": "YUSHAN",
+          "against": "Yu-Shan",
+          "field": "label"
+        },
+        {
+          "code": "shared-word",
+          "strength": "weak",
+          "label": "共有拉丁词",
+          "detail": "共有词：shan（单独不足以认定近似）",
+          "against": "Yu-Shan",
+          "field": "label"
+        },
+        {
+          "code": "latin-variant",
+          "strength": "strong",
+          "label": "拉丁写法变体",
+          "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yushan）",
+          "normalized": "YUSHAN",
+          "against": "Yushan",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "Yu-Shan",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yu-Shan）",
+              "normalized": "YUSHAN"
+            },
+            {
+              "code": "shared-word",
+              "strength": "weak",
+              "label": "共有拉丁词",
+              "detail": "共有词：shan（单独不足以认定近似）"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "Yushan",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ Yushan）",
+              "normalized": "YUSHAN"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": true,
+        "relation": "same",
+        "reason": "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”",
+        "decidedAgainstRevision": "2"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "brand",
+      "reasonCodes": [
+        "goods-related",
+        "strong-mark-match"
+      ],
+      "reasons": [
+        "“滴灌配件”与 S-71 rev2“包括商业园艺滴灌接头”：同一商品/服务概念；该修订新增“包括商业园艺滴灌接头”"
+      ],
+      "questions": [],
+      "assignable": true,
+      "code": "Q1-C04",
+      "flowState": "已分派",
+      "assignee": "林岚",
+      "assignments": [
+        {
+          "assignmentId": "A-002",
+          "at": "2026-11-24T10:05:00+08:00",
+          "assignee": "林岚",
+          "market": "松岛"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [],
+      "flags": {}
+    },
+    {
+      "key": "q1|q1-M1|t4|松岛|S-53",
+      "queryId": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "mention": {
+        "id": "q1-M1",
+        "text": "雨杉",
+        "span": [
+          0,
+          2
+        ],
+        "role": "actual",
+        "roleLabel": "拟实际使用名称",
+        "rule": "zh-actual-zuo",
+        "filingIntent": null,
+        "quote": "雨杉做滴灌配件，套管"
+      },
+      "trademark": {
+        "id": "t4",
+        "label": "Rain Cedar",
+        "variant": "RainCedar",
+        "nature": "注册字样",
+        "market": "松岛",
+        "category": "S-53",
+        "categoryRevision": "1",
+        "categoryText": "景观规划",
+        "categoryParent": "设计服务"
+      },
+      "market": "松岛",
+      "inScope": true,
+      "scopeReason": "档案市场 松岛 在来函指定市场内",
+      "confidence": "中",
+      "evidences": [
+        {
+          "code": "calque",
+          "strength": "medium",
+          "label": "逐字意译对应",
+          "detail": "逐字义译连写均为 raincedar：雨杉 ↔ Rain Cedar（可能是有意的中英对应，需人工确认）",
+          "calqueKey": "raincedar",
+          "against": "Rain Cedar",
+          "field": "label"
+        },
+        {
+          "code": "calque",
+          "strength": "medium",
+          "label": "逐字意译对应",
+          "detail": "逐字义译连写均为 raincedar：雨杉 ↔ RainCedar（可能是有意的中英对应，需人工确认）",
+          "calqueKey": "raincedar",
+          "against": "RainCedar",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "Rain Cedar",
+          "evidences": [
+            {
+              "code": "calque",
+              "strength": "medium",
+              "label": "逐字意译对应",
+              "detail": "逐字义译连写均为 raincedar：雨杉 ↔ Rain Cedar（可能是有意的中英对应，需人工确认）",
+              "calqueKey": "raincedar"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "RainCedar",
+          "evidences": [
+            {
+              "code": "calque",
+              "strength": "medium",
+              "label": "逐字意译对应",
+              "detail": "逐字义译连写均为 raincedar：雨杉 ↔ RainCedar（可能是有意的中英对应，需人工确认）",
+              "calqueKey": "raincedar"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": false,
+        "relation": "none",
+        "reason": "来函商品概念与类目“景观规划”（设计服务）不对应",
+        "decidedAgainstRevision": "1"
+      },
+      "status": "需核查",
+      "priority": "P2",
+      "lane": "brand",
+      "reasonCodes": [
+        "category-not-related",
+        "medium-mark-match-cross-category"
+      ],
+      "reasons": [
+        "来函商品概念与类目“景观规划”（设计服务）不对应"
+      ],
+      "questions": [
+        "存在意译/近形等中等强度线索但类目不对应，需人工判断两个品牌是否实际指向同一来源或存在扩展计划。"
+      ],
+      "assignable": true,
+      "code": "Q1-C05",
+      "flowState": "已分派",
+      "assignee": "林岚",
+      "assignments": [
+        {
+          "assignmentId": "A-002",
+          "at": "2026-11-24T10:05:00+08:00",
+          "assignee": "林岚",
+          "market": "松岛"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [
+        {
+          "at": "2026-11-24T09:40:00+08:00",
+          "actor": "系统",
+          "action": "independent-evidence-retained",
+          "status": "待分派",
+          "reason": "撤销描述词 t3 的俗称关联后，仍有独立证据：calque"
+        }
+      ],
+      "flags": {
+        "independentEvidenceRetained": {
+          "descriptorId": "t3",
+          "codes": [
+            "calque"
+          ],
+          "at": "2026-11-24T09:40:00+08:00"
+        }
+      }
+    },
+    {
+      "key": "q3|q3-M1|t4|松岛|S-53",
+      "queryId": "q3",
+      "client": "雨海设计",
+      "source": {
+        "file": "来函.json",
+        "id": "q3"
+      },
+      "mention": {
+        "id": "q3-M1",
+        "text": "Rain Cedar",
+        "span": [
+          12,
+          22
+        ],
+        "role": "actual",
+        "roleLabel": "拟实际使用名称",
+        "rule": "en-the-mark-is",
+        "filingIntent": null,
+        "quote": "rk is Rain Cedar for lan"
+      },
+      "trademark": {
+        "id": "t4",
+        "label": "Rain Cedar",
+        "variant": "RainCedar",
+        "nature": "注册字样",
+        "market": "松岛",
+        "category": "S-53",
+        "categoryRevision": "1",
+        "categoryText": "景观规划",
+        "categoryParent": "设计服务"
+      },
+      "market": "松岛",
+      "inScope": true,
+      "scopeReason": "档案市场 松岛 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "exact",
+          "strength": "strong",
+          "label": "原样一致",
+          "detail": "“Rain Cedar”与“Rain Cedar”完全相同",
+          "against": "Rain Cedar",
+          "field": "label"
+        },
+        {
+          "code": "latin-variant",
+          "strength": "strong",
+          "label": "拉丁写法变体",
+          "detail": "忽略大小写、空格与连字符后均为 RAINCEDAR（Rain Cedar ↔ RainCedar）",
+          "normalized": "RAINCEDAR",
+          "against": "RainCedar",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "Rain Cedar",
+          "evidences": [
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“Rain Cedar”与“Rain Cedar”完全相同"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "RainCedar",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 RAINCEDAR（Rain Cedar ↔ RainCedar）",
+              "normalized": "RAINCEDAR"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "landscape design",
+          "span": [
+            27,
+            43
+          ],
+          "conceptId": "LANDSCAPE",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "Cedar tubing",
+          "span": [
+            45,
+            57
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": true,
+        "relation": "same",
+        "reason": "“landscape design”与 S-53 rev1“景观规划”：同一商品/服务概念",
+        "decidedAgainstRevision": "1"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "brand",
+      "reasonCodes": [
+        "goods-related",
+        "strong-mark-match"
+      ],
+      "reasons": [
+        "“landscape design”与 S-53 rev1“景观规划”：同一商品/服务概念"
+      ],
+      "questions": [],
+      "assignable": true,
+      "code": "Q3-C01",
+      "flowState": "已分派",
+      "assignee": "林岚",
+      "assignments": [
+        {
+          "assignmentId": "A-002",
+          "at": "2026-11-24T10:05:00+08:00",
+          "assignee": "林岚",
+          "market": "松岛"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [
+        {
+          "at": "2026-11-24T09:40:00+08:00",
+          "actor": "系统",
+          "action": "independent-evidence-retained",
+          "status": "待分派",
+          "reason": "撤销描述词 t3 的俗称关联后，仍有独立证据：exact、latin-variant"
+        }
+      ],
+      "flags": {
+        "independentEvidenceRetained": {
+          "descriptorId": "t3",
+          "codes": [
+            "exact",
+            "latin-variant"
+          ],
+          "at": "2026-11-24T09:40:00+08:00"
+        }
+      }
+    }
+  ],
+  "replyFormat": {
+    "colleague": "林岚",
+    "checks": [
+      {
+        "finding": "<finding key 或短码>",
+        "verdict": "",
+        "note": "",
+        "evidences": []
+      }
+    ]
+  }
+}

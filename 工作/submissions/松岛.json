@@ -1,0 +1,27 @@
+{
+  "assignmentId": "A-002",
+  "colleague": "林岚",
+  "receivedAt": "2026-11-25T15:30:00+08:00",
+  "checks": [
+    {
+      "finding": "q1|q1-M1|t2|松岛|S-71",
+      "verdict": "修订后构成同类，需核查",
+      "note": "S-71 rev2 已包括商业园艺滴灌接头，旧“不相关”结论不再适用。"
+    },
+    {
+      "finding": "q1|q1-M2|t2|松岛|S-71",
+      "verdict": "拉丁变体成立",
+      "note": "Yu Shan 与 Yu-Shan/Yushan 归一相同；与上一条是同一类目下两个独立写法候选，分别留痕。"
+    },
+    {
+      "finding": "q1|q1-M1|t4|松岛|S-53",
+      "verdict": "未发现实际对应使用",
+      "note": "Rain Cedar 在 S-53 景观规划注册；未发现其在滴灌/套管商品上使用，是否意译关联请客户确认。"
+    },
+    {
+      "finding": "q3|q3-M1|t4|松岛|S-53",
+      "verdict": "相同标志+同类服务",
+      "note": "Rain Cedar/RainCedar 在 S-53 有效注册，景观规划与 landscape design 对应，高优先级。"
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "id": "A-001",
+  "market": "海港区",
+  "assignee": "周岚",
+  "at": "2026-11-24T10:00:00+08:00",
+  "findingKeys": [
+    "q1|q1-M1|t1|海港区|H-12",
+    "q1|q1-M2|t1|海港区|H-12",
+    "q2|q2-M1|t1|海港区|H-12"
+  ],
+  "status": "已发出",
+  "note": "海港区字样与 H-12 类目核对",
+  "findings": [
+    {
+      "key": "q1|q1-M1|t1|海港区|H-12",
+      "queryId": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "mention": {
+        "id": "q1-M1",
+        "text": "雨杉",
+        "span": [
+          0,
+          2
+        ],
+        "role": "actual",
+        "roleLabel": "拟实际使用名称",
+        "rule": "zh-actual-zuo",
+        "filingIntent": null,
+        "quote": "雨杉做滴灌配件，套管"
+      },
+      "trademark": {
+        "id": "t1",
+        "label": "雨山",
+        "variant": "YUSHAN",
+        "nature": "注册字样",
+        "market": "海港区",
+        "category": "H-12",
+        "categoryRevision": "1",
+        "categoryText": "滴灌接头及阀",
+        "categoryParent": "园艺器具"
+      },
+      "market": "海港区",
+      "inScope": true,
+      "scopeReason": "档案市场 海港区 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "homophone",
+          "strength": "strong",
+          "label": "中文同音/谐音",
+          "detail": "拼音相同（无声调）：yushan，雨杉 ↔ 雨山",
+          "soundKey": "yushan",
+          "against": "雨山",
+          "field": "label"
+        },
+        {
+          "code": "shared-han",
+          "strength": "weak",
+          "label": "共有汉字",
+          "detail": "共有汉字：雨（单独不足以认定近似）",
+          "against": "雨山",
+          "field": "label"
+        },
+        {
+          "code": "transliteration",
+          "strength": "strong",
+          "label": "跨文字音译",
+          "detail": "读音键 yushan 对应：雨杉 ↔ YUSHAN（无声调、多音字取可用读法）",
+          "soundKey": "yushan",
+          "against": "YUSHAN",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "雨山",
+          "evidences": [
+            {
+              "code": "homophone",
+              "strength": "strong",
+              "label": "中文同音/谐音",
+              "detail": "拼音相同（无声调）：yushan，雨杉 ↔ 雨山",
+              "soundKey": "yushan"
+            },
+            {
+              "code": "shared-han",
+              "strength": "weak",
+              "label": "共有汉字",
+              "detail": "共有汉字：雨（单独不足以认定近似）"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "YUSHAN",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨杉 ↔ YUSHAN（无声调、多音字取可用读法）",
+              "soundKey": "yushan"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": true,
+        "relation": "same",
+        "reason": "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念",
+        "decidedAgainstRevision": "1"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "brand",
+      "reasonCodes": [
+        "goods-related",
+        "strong-mark-match"
+      ],
+      "reasons": [
+        "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念"
+      ],
+      "questions": [],
+      "assignable": true,
+      "code": "Q1-C01",
+      "flowState": "已分派",
+      "assignee": "周岚",
+      "assignments": [
+        {
+          "assignmentId": "A-001",
+          "at": "2026-11-24T10:00:00+08:00",
+          "assignee": "周岚",
+          "market": "海港区"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [
+        {
+          "at": "2026-11-24T09:40:00+08:00",
+          "actor": "系统",
+          "action": "independent-evidence-retained",
+          "status": "待分派",
+          "reason": "撤销描述词 t3 的俗称关联后，仍有独立证据：homophone、transliteration"
+        }
+      ],
+      "flags": {
+        "abbreviationCorrection": {
+          "correctName": "雨山",
+          "wrongName": "雨杉"
+        },
+        "independentEvidenceRetained": {
+          "descriptorId": "t3",
+          "codes": [
+            "homophone",
+            "transliteration"
+          ],
+          "at": "2026-11-24T09:40:00+08:00"
+        }
+      }
+    },
+    {
+      "key": "q1|q1-M2|t1|海港区|H-12",
+      "queryId": "q1",
+      "client": "河岸园艺",
+      "source": {
+        "file": "来函.json",
+        "id": "q1"
+      },
+      "mention": {
+        "id": "q1-M2",
+        "text": "Yu Shan",
+        "span": [
+          25,
+          32
+        ],
+        "role": "alias",
+        "roleLabel": "暂拟别名/异写",
+        "rule": "zh-alias-en",
+        "filingIntent": null,
+        "quote": "也考虑英文 Yu Shan。"
+      },
+      "trademark": {
+        "id": "t1",
+        "label": "雨山",
+        "variant": "YUSHAN",
+        "nature": "注册字样",
+        "market": "海港区",
+        "category": "H-12",
+        "categoryRevision": "1",
+        "categoryText": "滴灌接头及阀",
+        "categoryParent": "园艺器具"
+      },
+      "market": "海港区",
+      "inScope": true,
+      "scopeReason": "档案市场 海港区 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "transliteration",
+          "strength": "strong",
+          "label": "跨文字音译",
+          "detail": "读音键 yushan 对应：Yu Shan ↔ 雨山（无声调、多音字取可用读法）",
+          "soundKey": "yushan",
+          "against": "雨山",
+          "field": "label"
+        },
+        {
+          "code": "latin-variant",
+          "strength": "strong",
+          "label": "拉丁写法变体",
+          "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ YUSHAN）",
+          "normalized": "YUSHAN",
+          "against": "YUSHAN",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "雨山",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：Yu Shan ↔ 雨山（无声调、多音字取可用读法）",
+              "soundKey": "yushan"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "YUSHAN",
+          "evidences": [
+            {
+              "code": "latin-variant",
+              "strength": "strong",
+              "label": "拉丁写法变体",
+              "detail": "忽略大小写、空格与连字符后均为 YUSHAN（Yu Shan ↔ YUSHAN）",
+              "normalized": "YUSHAN"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [
+        {
+          "id": "G1",
+          "text": "滴灌配件",
+          "span": [
+            3,
+            7
+          ],
+          "conceptId": "DRIP_FITTINGS",
+          "brandUse": true
+        },
+        {
+          "id": "G2",
+          "text": "套管",
+          "span": [
+            8,
+            10
+          ],
+          "conceptId": "TUBING",
+          "brandUse": false
+        }
+      ],
+      "categoryAssessment": {
+        "related": true,
+        "relation": "same",
+        "reason": "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念",
+        "decidedAgainstRevision": "1"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "brand",
+      "reasonCodes": [
+        "goods-related",
+        "strong-mark-match"
+      ],
+      "reasons": [
+        "“滴灌配件”与 H-12 rev1“滴灌接头及阀”：同一商品/服务概念"
+      ],
+      "questions": [],
+      "assignable": true,
+      "code": "Q1-C02",
+      "flowState": "已分派",
+      "assignee": "周岚",
+      "assignments": [
+        {
+          "assignmentId": "A-001",
+          "at": "2026-11-24T10:00:00+08:00",
+          "assignee": "周岚",
+          "market": "海港区"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [],
+      "flags": {
+        "abbreviationCorrection": {
+          "correctName": "雨山",
+          "wrongName": "雨杉"
+        }
+      }
+    },
+    {
+      "key": "q2|q2-M1|t1|海港区|H-12",
+      "queryId": "q2",
+      "client": "雨山零件",
+      "source": {
+        "file": "来函.json",
+        "id": "q2"
+      },
+      "mention": {
+        "id": "q2-M1",
+        "text": "雨山",
+        "span": [
+          5,
+          7
+        ],
+        "role": "abbreviation",
+        "roleLabel": "公司简称（未必作商标使用）",
+        "rule": "zh-abbr",
+        "filingIntent": null,
+        "quote": "本公司简称雨山，现用标是青锋。"
+      },
+      "trademark": {
+        "id": "t1",
+        "label": "雨山",
+        "variant": "YUSHAN",
+        "nature": "注册字样",
+        "market": "海港区",
+        "category": "H-12",
+        "categoryRevision": "1",
+        "categoryText": "滴灌接头及阀",
+        "categoryParent": "园艺器具"
+      },
+      "market": "海港区",
+      "inScope": true,
+      "scopeReason": "档案市场 海港区 在来函指定市场内",
+      "confidence": "高",
+      "evidences": [
+        {
+          "code": "exact",
+          "strength": "strong",
+          "label": "原样一致",
+          "detail": "“雨山”与“雨山”完全相同",
+          "against": "雨山",
+          "field": "label"
+        },
+        {
+          "code": "transliteration",
+          "strength": "strong",
+          "label": "跨文字音译",
+          "detail": "读音键 yushan 对应：雨山 ↔ YUSHAN（无声调、多音字取可用读法）",
+          "soundKey": "yushan",
+          "against": "YUSHAN",
+          "field": "variant"
+        }
+      ],
+      "surfaceMatches": [
+        {
+          "field": "label",
+          "value": "雨山",
+          "evidences": [
+            {
+              "code": "exact",
+              "strength": "strong",
+              "label": "原样一致",
+              "detail": "“雨山”与“雨山”完全相同"
+            }
+          ]
+        },
+        {
+          "field": "variant",
+          "value": "YUSHAN",
+          "evidences": [
+            {
+              "code": "transliteration",
+              "strength": "strong",
+              "label": "跨文字音译",
+              "detail": "读音键 yushan 对应：雨山 ↔ YUSHAN（无声调、多音字取可用读法）",
+              "soundKey": "yushan"
+            }
+          ]
+        }
+      ],
+      "basisGoods": [],
+      "categoryAssessment": {
+        "related": null,
+        "relation": "unknown",
+        "reason": "来函未说明商品/服务，无法比对类目，需先补齐经营范围",
+        "decidedAgainstRevision": "1"
+      },
+      "status": "需核查",
+      "priority": "P1",
+      "lane": "abbreviation",
+      "reasonCodes": [
+        "company-abbreviation",
+        "goods-scope-unknown"
+      ],
+      "reasons": [
+        "来函称其为公司简称；简称是否构成商标性使用需单独核实，不能直接按品牌主张，也不能当作无关词丢弃。",
+        "来函未说明商品/服务，无法比对类目，需先补齐经营范围"
+      ],
+      "questions": [
+        "该简称是否构成商标性使用：是否在商品、包装、合同、店招或宣传中作为标志单独使用？有无证据（照片、发票、网页）？",
+        "请确认实际经营的商品/服务清单，再判定 H-12 等类目的审核范围。"
+      ],
+      "assignable": true,
+      "code": "Q2-C01",
+      "flowState": "已分派",
+      "assignee": "周岚",
+      "assignments": [
+        {
+          "assignmentId": "A-001",
+          "at": "2026-11-24T10:00:00+08:00",
+          "assignee": "周岚",
+          "market": "海港区"
+        }
+      ],
+      "localChecks": [],
+      "decisionHistory": [],
+      "flags": {
+        "abbreviationCorrection": {
+          "correctName": "雨山",
+          "wrongName": "雨杉"
+        }
+      }
+    }
+  ],
+  "replyFormat": {
+    "colleague": "周岚",
+    "checks": [
+      {
+        "finding": "<finding key 或短码>",
+        "verdict": "",
+        "note": "",
+        "evidences": []
+      }
+    ]
+  }
+}

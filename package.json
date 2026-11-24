@@ -8,7 +8,13 @@
     "node": "22.x"
   },
   "scripts": {
+    "start": "node tool.js",
     "test": "node --test",
-    "materials": "node materials.js"
+    "materials": "node materials.js",
+    "parse": "node tool.js parse",
+    "analyze": "node tool.js analyze",
+    "build": "node tool.js build",
+    "report": "node tool.js report",
+    "demo": "node tool.js demo"
   }
 }

@@ -1,0 +1,202 @@
+{
+  "revisionImpacts": [
+    {
+      "findingKey": "q1|q1-M1|t2|松岛|S-71",
+      "code": "Q1-C03",
+      "queryId": "q1",
+      "mention": "雨杉",
+      "trademarkId": "t2",
+      "categoryId": "S-71",
+      "market": "松岛",
+      "fromRevision": "1",
+      "toRevision": "2",
+      "oldText": "仅供工业流体传输",
+      "newText": "包括商业园艺滴灌接头",
+      "addedConcepts": [
+        "DRIP_FITTINGS"
+      ],
+      "matchingAdded": [
+        "DRIP_FITTINGS"
+      ],
+      "priorDecision": {
+        "at": "2025-09-15T16:20:00+08:00",
+        "actor": "顾问（旧）",
+        "action": "decision",
+        "status": "不相关",
+        "reason": "S-71 rev1 文本为“仅供工业流体传输”，与园艺滴灌配件无关，当时排除。",
+        "categoryRevision": "1"
+      }
+    }
+  ],
+  "abbreviation": {
+    "client": "雨山零件",
+    "correctName": "雨山",
+    "wrongName": "雨杉",
+    "applied": true,
+    "affectedLinkIds": [
+      "AL-01",
+      "AL-02",
+      "AL-03"
+    ],
+    "directLinkIds": [
+      "AL-01",
+      "AL-02"
+    ],
+    "propagatedLinkIds": [
+      "AL-02",
+      "AL-03"
+    ],
+    "otherClients": [
+      "河岸园艺",
+      "雨海设计"
+    ],
+    "assignmentRefs": [
+      "A-2024-018"
+    ],
+    "links": [
+      {
+        "status": "corrected",
+        "origin": "2025 年 intake 备注",
+        "derivedFrom": [],
+        "assignmentRefs": [
+          "A-2024-018"
+        ],
+        "id": "AL-01",
+        "client": "雨山零件",
+        "canonical": "雨山",
+        "alias": "雨杉",
+        "relation": "音近异写（早年按读音补录，未经客户确认）",
+        "correctedAt": "2026-11-24T09:20:00+08:00",
+        "correction": "经 雨山零件 来函确认简称为“雨山”，“雨杉”这一错误音近关联撤销，并追查传播副本"
+      },
+      {
+        "status": "corrected",
+        "origin": null,
+        "derivedFrom": [
+          "AL-01"
+        ],
+        "assignmentRefs": [],
+        "id": "AL-02",
+        "client": "河岸园艺",
+        "canonical": "雨杉",
+        "alias": "雨山",
+        "relation": "同步自雨山零件别名库的“关联写法”",
+        "correctedAt": "2026-11-24T09:20:00+08:00",
+        "correction": "经 雨山零件 来函确认简称为“雨山”，“雨杉”这一错误音近关联撤销，并追查传播副本"
+      },
+      {
+        "status": "corrected",
+        "origin": null,
+        "derivedFrom": [
+          "AL-02"
+        ],
+        "assignmentRefs": [],
+        "id": "AL-03",
+        "client": "雨海设计",
+        "canonical": "Rain Cedar",
+        "alias": "雨山",
+        "relation": "别名同步时误带的“中文对应名”",
+        "correctedAt": "2026-11-24T09:20:00+08:00",
+        "correction": "经 雨山零件 来函确认简称为“雨山”，“雨杉”这一错误音近关联撤销，并追查传播副本"
+      }
+    ]
+  },
+  "abbreviationFlaggedKeys": [
+    "q2|q2-M1|t1|海港区|H-12",
+    "q1|q1-M1|t1|海港区|H-12",
+    "q1|q1-M2|t1|海港区|H-12"
+  ],
+  "descriptor": {
+    "descriptorId": "t3",
+    "brandNames": [
+      "雨杉",
+      "Rain Cedar"
+    ],
+    "affectedLinkIds": [
+      "DL-01",
+      "DL-02"
+    ],
+    "affectedAssignmentIds": [
+      "A-OLD-1",
+      "A-OLD-2"
+    ],
+    "reopenedKeys": [
+      "q1|q1-M1|t3|松岛|S-72",
+      "q3|q3-M2|t3|松岛|S-72",
+      "q3|q3-M1|t3|松岛|S-72"
+    ],
+    "retained": [
+      {
+        "key": "q1|q1-M1|t1|海港区|H-12",
+        "code": "Q1-C01",
+        "queryId": "q1",
+        "mention": "雨杉",
+        "trademarkId": "t1",
+        "market": "海港区",
+        "category": "H-12",
+        "independentCodes": [
+          "homophone",
+          "transliteration"
+        ]
+      },
+      {
+        "key": "q1|q1-M1|t2|松岛|S-71",
+        "code": "Q1-C03",
+        "queryId": "q1",
+        "mention": "雨杉",
+        "trademarkId": "t2",
+        "market": "松岛",
+        "category": "S-71",
+        "independentCodes": [
+          "transliteration"
+        ]
+      },
+      {
+        "key": "q1|q1-M1|t4|松岛|S-53",
+        "code": "Q1-C05",
+        "queryId": "q1",
+        "mention": "雨杉",
+        "trademarkId": "t4",
+        "market": "松岛",
+        "category": "S-53",
+        "independentCodes": [
+          "calque"
+        ]
+      },
+      {
+        "key": "q3|q3-M1|t4|松岛|S-53",
+        "code": "Q3-C01",
+        "queryId": "q3",
+        "mention": "Rain Cedar",
+        "trademarkId": "t4",
+        "market": "松岛",
+        "category": "S-53",
+        "independentCodes": [
+          "exact",
+          "latin-variant"
+        ]
+      }
+    ],
+    "applied": true
+  },
+  "mergeH": {
+    "merged": [
+      "q1|q1-M1|t1|海港区|H-12",
+      "q1|q1-M2|t1|海港区|H-12",
+      "q2|q2-M1|t1|海港区|H-12"
+    ],
+    "missing": [],
+    "ok": true
+  },
+  "mergeS": {
+    "merged": [
+      "q1|q1-M1|t2|松岛|S-71",
+      "q1|q1-M2|t2|松岛|S-71",
+      "q1|q1-M1|t4|松岛|S-53",
+      "q3|q3-M1|t4|松岛|S-53"
+    ],
+    "missing": [],
+    "ok": true
+  },
+  "impactPreviewCount": 1
+}
